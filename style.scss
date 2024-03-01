@@ -1,0 +1,120 @@
+$defaultcolor: rgba(255, 255, 255, 1);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,800&display=swap');
+@mixin flexforsec() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@mixin defaulttext(){
+    font-size: 20px;
+    font-family: Open Sans;
+}
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./pexels.png);
+    padding: 71px 46px 71px 74px;
+}
+
+.mainSection {
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 760px;
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 30px 39px;
+
+        img {
+            height: 32px;
+            width: 27px;
+        }
+
+        &-nav {
+            display: flex;
+            gap: 11px;
+
+            a {
+                padding: 6px 29px;
+                border: 2px solid $defaultcolor;
+                font-size: 20px;
+                line-height: 27.24px;
+                text-decoration: none;
+                color: $defaultcolor;
+                border-radius: 20px;
+            }
+            a:first-child {
+                padding: 6px 20px;
+            }
+        }
+    }
+
+    &-main {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 80px;
+
+        &-text {
+            @include flexforsec();
+            color: $defaultcolor;
+            font-family: Open Sans;
+            h1 {
+                font-size: 100px;
+                line-height: 117.19px;
+            }
+            p {
+                @include defaulttext()
+            }
+        }
+        &-input {
+            @include flexforsec();
+            label{
+                position: relative;
+                input{
+                    width: 655px;
+                    height: 70px;
+                    outline: none;
+                    border: none;
+                    border-radius: 50px;
+                    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
+                    &::placeholder{
+                        font-size: 20px;
+                        padding-left: 20px;
+                        color: rgba(189, 189, 189, 0.8);
+                    }
+                }
+                img{
+                    position: absolute;
+                    top: 22px;
+                    right: 22px;
+                }
+            }
+            p{
+                padding: 20px;
+                @include defaulttext();
+                color: $defaultcolor;    
+            }
+        }
+    }
+    &-footer{
+        display: grid;
+        grid-template-columns: 80% 20%;
+        padding: 20px 30px;
+        margin-top: 200px;
+        &-icons{
+            img{
+                margin-right: 16px;
+            }
+        }
+        p{
+            font-size: 15px;
+            line-height: 20.43px;
+            color: $defaultcolor;
+        }
+    }
+}

@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./pexels.png);
+  padding: 71px 46px 71px 74px;
+}
+
+.mainSection {
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 760px;
+}
+.mainSection-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 30px 39px;
+}
+.mainSection-header img {
+  height: 32px;
+  width: 27px;
+}
+.mainSection-header-nav {
+  display: flex;
+  gap: 11px;
+}
+.mainSection-header-nav a {
+  padding: 6px 29px;
+  border: 2px solid rgb(255, 255, 255);
+  font-size: 20px;
+  line-height: 27.24px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+.mainSection-header-nav a:first-child {
+  padding: 6px 20px;
+}
+.mainSection-main {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 80px;
+}
+.mainSection-main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-family: Open Sans;
+}
+.mainSection-main-text h1 {
+  font-size: 100px;
+  line-height: 117.19px;
+}
+.mainSection-main-text p {
+  font-size: 24px;
+  font-family: OpenSans;
+}
+.mainSection-main-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainSection-main-input label {
+  position: relative;
+}
+.mainSection-main-input label input {
+  width: 655px;
+  height: 70px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
+}
+.mainSection-main-input label input::placeholder {
+  font-size: 20px;
+  padding-left: 20px;
+  color: rgba(189, 189, 189, 0.8);
+}
+.mainSection-main-input label img {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+}
+.mainSection-main-input p {
+  padding: 20px;
+  font-size: 20px;
+  font-family: Open Sans;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.mainSection-footer {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  padding: 20px 30px;
+  margin-top: 200px;
+  }
+
+.mainSection-footer-icons img {
+  margin-right: 16px;
+  width: 1cm;
+}
+.mainSection-footer p {
+  font-size: 15px;
+  line-height: 20.43px;
+  color: rgb(255, 255, 255);
+}
+
+/*# sourceMappingURL=gotowyj.css.map */
